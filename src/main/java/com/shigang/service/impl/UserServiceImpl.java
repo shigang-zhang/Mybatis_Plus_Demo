@@ -12,6 +12,7 @@ import java.util.List;
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements UserService {
     @Override
     public String test() {
+        System.out.println("1");
         System.out.println("2");
         List<User> users = baseMapper.selectList(null);
         users.stream().forEach(s -> System.out.println("s = " + s));
